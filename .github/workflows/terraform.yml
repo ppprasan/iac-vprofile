@@ -21,7 +21,7 @@ env:
 
 jobs:
   terraform:
-    name: "apply terraform code change"
+    name: apply terraform code change
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -56,4 +56,4 @@ jobs:
         if: steps.plan.outcome == 'failure'
         run: exit 1
 
-        
+
