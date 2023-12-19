@@ -10,8 +10,8 @@ module "vpc" {
 
   # private_subnets = ["172.20.1.0/24", "172.20.2.0/24", "172.20.3.0/24"]
   # public_subnets  = ["172.20.4.0/24", "172.20.5.0/24", "172.20.6.0/24"]
-  private_subnets = ["172.20.1.0/24", "172.20.2.0/24"] # just because us-west-1 has 2 azs
-  public_subnets  = ["172.20.4.0/24", "172.20.5.0/24"] # just because us-west-1 has 2 azs
+  private_subnets = ["172.20.1.0/24", "172.20.2.0/24"]
+  public_subnets  = ["172.20.4.0/24", "172.20.5.0/24"]
 
   enable_nat_gateway   = true
   single_nat_gateway   = true
